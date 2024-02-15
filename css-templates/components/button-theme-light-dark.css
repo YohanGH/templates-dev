@@ -1,0 +1,102 @@
+/* --- Modification --- */
+:root {
+    --background-color-light: #f0f0f0;
+    --text-color-light: #333;
+    --background-color-dark: #333;
+    --text-color-dark: #f0f0f0;
+}
+
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+/* --- end --- */
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.theme-switch-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 0 10px;
+}
+
+.theme-switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.theme-switch-input:checked + .theme-slider:before {
+    transform: translateX(26px);
+}
+/* Styles généraux pour la bascule */
+.theme-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+/* Style pour le soleil (mode jour) */
+.theme-slider:before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px yellow;
+    transition: transform 0.4s, background-color 0.4s;
+}
+
+/* Style pour le croissant de lune (mode sombre) */
+.theme-switch-input:checked + .theme-slider:before {
+    transform: translateX(26px);
+    background-color: #F0E68C; /* Couleur du croissant de lune */
+    box-shadow: none;
+}
+
+.theme-switch-input:checked + .theme-slider {
+    background-color: grey; /* Fond plus sombre pour le mode nuit */
+}
+
+/* Création du croissant de lune */
+.theme-switch-input:checked + .theme-slider:after {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    left: 25px;
+    bottom: 7px;
+    background-color: grey;
+    border-radius: 50%;
+    box-shadow: -5px 0 4px 4px grey;
+	transition: transform 0.4s, background-color 0.4s;
+}
+
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}

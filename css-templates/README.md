@@ -19,6 +19,8 @@
 │
 ├── reset.css         # Fichier pour réinitialiser les styles par défaut du navigateur
 │
+├── normelize.css     # Fichier pour normaliser les styles par défaut du navigateur
+│
 ├── variables.css     # Définitions des variables CSS (couleurs, polices, etc.)
 │
 ├── layout.css        # Styles concernant la mise en page globale (header, footer, navigation)
