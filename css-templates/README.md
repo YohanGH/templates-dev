@@ -13,6 +13,7 @@
 ```
 # Arborescence
 
+```
 /css/
 │
 ├── main.css          # Fichier principal CSS qui peut inclure des importations de tous les autres fichiers
@@ -34,6 +35,7 @@
     ├── home.css
     ├── about.css
     └── contact.css
+```
 
 ## Reset.css | v2.0
 
