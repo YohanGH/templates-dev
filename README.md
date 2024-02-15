@@ -59,6 +59,7 @@ Pour utiliser un template, naviguez simplement dans le dossier correspondant et 
 
 ## Arborescence
 
+```
 /templates-dev/
 │
 ├── README.md               # Description du projet, comment l'utiliser, et la table des matières
@@ -101,4 +102,5 @@ Pour utiliser un template, naviguez simplement dans le dossier correspondant et 
 └── assets/                 # Ressources partagées comme les images et les polices
     ├── images/
     └── fonts/
+```
 
