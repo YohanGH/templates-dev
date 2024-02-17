@@ -1,0 +1,108 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, sans-serif;
+	line-height: 1.6;
+	font-size: 16px;
+	color: #333;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 20px;
+}
+
+/* Structure de base */
+header,
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	background-color: #e3e3e3;
+}
+
+main {
+	flex: 1;
+	margin: 20px;
+}
+
+/* Typographie de base */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 20px;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+/* Liens */
+a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Listes */
+ul,
+ol {
+	margin-bottom: 20px;
+	padding-left: 40px;
+}
+
+/* Images */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Formulaires */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+}
+
+input[type="submit"],
+button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+	background-color: #0056b3;
+}
+
+/* Utilitaires */
+.container {
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* Ajoutez vos propres styles en dessous */
