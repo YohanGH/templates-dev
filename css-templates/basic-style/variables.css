@@ -1,0 +1,30 @@
+:root {
+	/* --- Space --- */
+	--space-xs: 4px;
+	--space-sm: 8px;
+	--space-md: 16px;
+	--space-lg: 32px;
+	--space-xl: 64px;
+
+	/* --- Context --- */
+	--margin-vertical-md: var(--space-md);
+	--margin-horizontal-md: var(--space-md);
+	--padding-section-sm: var(--space-sm);
+
+	/* --- Responsive --- */
+	--space-responsive: clamp(8px, 5vw, 20px);
+
+	/* --- Color --- */
+	--color-primary: #007bff;
+	--color-secondary: #6c757d;
+	--color-success: #28a745;
+	--color-error: #dc3545;
+	--color-background: #f8f9fa;
+	--color-text: #212529;
+
+	/* --- Text --- */
+	--font-size-base: 1rem;
+	--font-size-sm: 0.875rem;
+	--font-size-lg: 1.25rem;
+	--font-size-xl: 1.5rem;
+}

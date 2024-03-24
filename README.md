@@ -99,8 +99,14 @@ Pour utiliser un template, naviguez simplement dans le dossier correspondant et 
 │       ├── validate.js
 │       └── README.md
 │
+├── node-js/
+│   ├── initialisation_npm.sh
+│
 └── assets/                 # Ressources partagées comme les images et les polices
     ├── images/
     └── fonts/
 ```
 
+## Work In Progress
+
+- Glossary réviser le css
