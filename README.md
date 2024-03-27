@@ -101,6 +101,7 @@ Pour utiliser un template, naviguez simplement dans le dossier correspondant et 
 │
 ├── node-js/
 │   ├── initialisation_npm.sh
+│   └── scripts-initialisation-react.sh
 │
 └── assets/                 # Ressources partagées comme les images et les polices
     ├── images/
