@@ -6,7 +6,7 @@
 #    By: YohanGH <YohanGH@proton.me>                    //    ''     Code      #
 #                                                      (|     | )              #
 #    Created: 2024/03/25 15:13:28 by YohanGH           '__   _/_               #
-#    Updated: 2024/03/27 10:40:11 by YohanGH          (___)=(___)              #
+#    Updated: 2024/03/27 14:31:56 by YohanGH          (___)=(___)              #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,7 @@ fi
 
 # Installation de Prettier pour le formatage de code
 echo "Installation de Prettier..."
-npm install prettier
+npm install prettier --save-dev
 if [ $? -ne 0 ]; then
   echo "Erreur lors de l'installation de Prettier."
   exit 1
@@ -54,7 +54,7 @@ fi
 
 # Installation de ESLint pour l'analyse de code
 echo "Installation de ESLint..."
-npm install eslint
+npm install eslint --save-dev
 if [ $? -ne 0 ]; then
   echo "Erreur lors de l'installation de ESLint."
   exit 1
@@ -68,8 +68,6 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-echo "Installation terminée avec succès."
-
 # Création d'un dossier components pour les composants React
 echo "Création du dossier components pour les composants React..."
 mkdir -p src/components
@@ -79,3 +77,5 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Dossier components créé avec succès."
+
+echo "Installation terminée avec succès."
