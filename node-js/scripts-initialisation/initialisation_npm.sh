@@ -6,7 +6,7 @@
 #    By: YohanGH <YohanGH@proton.me>                    //    ''     Code      #
 #                                                      (|     | )              #
 #    Created: 2024/03/19 10:48:02 by YohanGH           '__   _/_               #
-#    Updated: 2024/03/19 10:59:35 by YohanGH          (___)=(___)              #
+#    Updated: 2024/03/27 14:33:43 by YohanGH          (___)=(___)              #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,7 @@ fi
 
 echo "Installation de Prettier..."
 # Installe Prettier pour le formatage de code
-npm install prettier
+npm install prettier --save-dev
 if [ $? -ne 0 ]; then
   echo "Erreur lors de l'installation de Prettier."
   exit 1
@@ -49,7 +49,7 @@ fi
 
 echo "Installation de ESLint..."
 # Installe ESLint pour l'analyse de code
-npm install eslint
+npm install eslint --save-dev
 if [ $? -ne 0 ]; then
   echo "Erreur lors de l'installation de ESLint."
   exit 1
